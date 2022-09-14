@@ -19,10 +19,10 @@ export default class MoviesPage extends Component {
 	}
 	componentDidUpdate(prevProps, prevState) {
 		const { query: prevQuery } = getQueryParams(prevProps.location.search);
-		console.log('prevparams', prevQuery);
+		// console.log('prevparams', prevQuery);
 
 		const { query: nextQuery } = getQueryParams(this.props.location.search);
-		console.log('nextParam', nextQuery);
+		// console.log('nextParam', nextQuery);
 		if (prevQuery !== nextQuery) {
 			this.fetchQuery(nextQuery);
 		}

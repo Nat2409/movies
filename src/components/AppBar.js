@@ -6,10 +6,22 @@ export default function AppBar() {
 	return (
 		<ul>
 			<li>
-				<NavLink to={routes.home}>Home</NavLink>
+				<NavLink
+					className="NavLink"
+					activeClassName="NavLinkActive"
+					to={routes.home}
+				>
+					Home
+				</NavLink>
 			</li>
 			<li>
-				<NavLink to={routes.movies}>Movies</NavLink>
+				<NavLink
+					className="NavLink"
+					activeClassName="NavLinkActive"
+					to={routes.movies}
+				>
+					Movies
+				</NavLink>
 			</li>
 		</ul>
 	);

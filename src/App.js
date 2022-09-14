@@ -1,5 +1,3 @@
-// 3ca4f0fa98e22b27d06819a16b26fd68
-// https://api.themoviedb.org/3/movie/550?api_key=3ca4f0fa98e22b27d06819a16b26fd68
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './components/HomePage/HomePage';

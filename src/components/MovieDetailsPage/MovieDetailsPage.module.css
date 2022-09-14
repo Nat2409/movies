@@ -1,0 +1,11 @@
+.flexBox {
+	padding-top: 20px;
+	margin-bottom: 10px;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+}
+.description {
+	/* width: 400px; */
+	padding-left: 10px;
+}
