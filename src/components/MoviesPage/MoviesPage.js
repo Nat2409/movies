@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import fetchMovies from '../../fetchMovies';
-import routes from '../../routes';
-import MovieDetailsPage from '../MovieDetailsPage/MovieDetailsPage';
 import SearchBox from '../SearchBox';
 import getQueryParams from '../../utils/getQueryParams';
 

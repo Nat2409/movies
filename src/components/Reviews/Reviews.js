@@ -16,7 +16,6 @@ export default class Reviews extends Component {
 		// console.log('reviews', reviews);
 		return (
 			<>
-				<h2>Reviews</h2>
 				{reviews.length > 0 ? (
 					<ul>
 						{reviews.map(review => (

@@ -91,18 +91,20 @@ export default class MovieDetailsPage extends Component {
 						<hr />
 					</>
 				)}
-				{/* <Switch> */}
-				<Route
-					path={`${this.props.match.path}/cast`}
-					exact
-					component={asyncCast}
-				/>
-				<Route
-					path={`${this.props.match.path}/reviews`}
-					exact
-					component={asyncReviews}
-				/>
-				{/* </Switch> */}
+				<Suspense fallback={<h2>Loading...</h2>}>
+					<Switch>
+						<Route
+							path={`${this.props.match.path}/cast`}
+							exact
+							component={asyncCast}
+						/>
+						<Route
+							path={`${this.props.match.path}/reviews`}
+							exact
+							component={asyncReviews}
+						/>
+					</Switch>
+				</Suspense>
 			</>
 		);
 	}

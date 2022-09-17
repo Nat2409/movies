@@ -16,7 +16,6 @@ export default class Cast extends Component {
 		const { casts } = this.state;
 		return (
 			<>
-				<p>Cast</p>
 				{casts && (
 					<>
 						<ul>

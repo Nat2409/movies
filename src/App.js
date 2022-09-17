@@ -5,8 +5,6 @@ import { Switch, Route } from 'react-router-dom';
 // import MovieDetailsPage from './components/MovieDetailsPage/MovieDetailsPage';
 import AppBar from './components/AppBar';
 import routes from './routes';
-import Cast from './components/Cast/Cast';
-import Reviews from './components/Reviews/Reviews';
 
 const asyncHomePage = lazy(() =>
 	import('./components/HomePage/HomePage' /*webpackChunkName: "home-page" */),

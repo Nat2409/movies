@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import fetchMovies from '../../fetchMovies';
-import routes from '../../routes';
 
 export default class HomePage extends Component {
 	state = {
