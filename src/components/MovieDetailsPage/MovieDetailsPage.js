@@ -1,10 +1,17 @@
-import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
+import React, { Component, lazy, Suspense } from 'react';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import fetchMovies from '../../fetchMovies';
 import routes from '../../routes';
-import Cast from '../Cast/Cast';
-import Reviews from '../Reviews/Reviews';
+// import Cast from '../Cast/Cast';
+// import Reviews from '../Reviews/Reviews';
 import styles from './MovieDetailsPage.module.css';
+
+const asyncCast = lazy(() =>
+	import('../Cast/Cast' /*webpackChunkName: "cast" */),
+);
+const asyncReviews = lazy(() =>
+	import('../Reviews/Reviews' /*webpackChunkName: "reviews" */),
+);
 
 export default class MovieDetailsPage extends Component {
 	state = {
@@ -84,13 +91,18 @@ export default class MovieDetailsPage extends Component {
 						<hr />
 					</>
 				)}
-
-				<Route path={`${this.props.match.path}/cast`} exact component={Cast} />
+				{/* <Switch> */}
+				<Route
+					path={`${this.props.match.path}/cast`}
+					exact
+					component={asyncCast}
+				/>
 				<Route
 					path={`${this.props.match.path}/reviews`}
 					exact
-					component={Reviews}
+					component={asyncReviews}
 				/>
+				{/* </Switch> */}
 			</>
 		);
 	}
