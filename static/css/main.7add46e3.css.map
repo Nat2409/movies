@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.7add46e3.css","mappings":"AAAA,SACC,UAED,CACA,eACC,aAED","sources":["index.css"],"sourcesContent":[".NavLink {\n\tcolor: blue;\n\t/* text-decoration: none; */\n}\n.NavLinkActive {\n\tcolor: palevioletred;\n\t/* text-decoration: none; */\n}\n"],"names":[],"sourceRoot":""}
